@@ -6,7 +6,7 @@
   text-decoration: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 *,
@@ -31,10 +31,10 @@ aside, nav, footer, header, section, main {
 	display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+/* h1, h2, h3, h4, h5, h6, p {
     font-size: inherit;
 	font-weight: inherit;
-}
+} */
 
 ul, ul li {
 	list-style: none;

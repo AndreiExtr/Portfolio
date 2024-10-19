@@ -86,4 +86,46 @@ section {
   font-size: 1.6rem;
   margin: 2rem 0 4rem;
   line-height: 1.5;
+}
+.home .home-content .btn-box {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.home .home-content .btn-box .btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 15rem;
+  height: 5rem;
+  background-color: var(--main-color);
+  border-radius: 0.8rem;
+  border: 1px solid var(--main-color);
+  font-size: 1.8rem;
+  font-family: 600;
+  letter-spacing: 0.1rem;
+  color: var(--bg-color);
+  z-index: 1;
+  overflow: hidden;
+}
+.home .home-content .btn-box .btn:hover {
+  color: var(--main-color);
+}
+.home .home-content .btn-box .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--bg-color);
+  border-radius: 0.8rem;
+  z-index: -1;
+  transition: 0.5s;
+  border: 1px solid var(--main-color);
+}
+.home .home-content .btn-box .btn:hover::before {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

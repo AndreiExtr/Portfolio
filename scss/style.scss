@@ -66,7 +66,6 @@ section{
 }
 
 .home{
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,40 +74,48 @@ section{
 
   .image-container {
     position: relative;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
-    overflow: hidden;
     
-    .circle{
-      position: absolute;
-      width: 600px;
-      height: 600px;
-      border-radius: 50%;
-      z-index: 100;  
-      animation: rotate 25s linear infinite;
-      // stroke: var(--second-bg-color);
-      transition: .5s;
-      cursor: pointer;
-
-      &:hover{
-        stroke: var(--main-color);
+    .circle {
+        position: absolute;
+        width: 530px;
+        height: 530px;
+        top: -15px;
+        left: -16px;
+        z-index: 10;  
+        cursor: pointer;
+        stroke: transparent; 
+        transition: stroke .5s ease-out;
         animation: rotate 45s linear infinite;
-      }
-      
-      @keyframes rotate {
-        from {
+
+        &:hover {
+          stroke: var(--main-color);
+          animation: rotate 45s linear infinite;
+        }
+        
+        @keyframes rotate {
+          from {
             transform: rotate(0deg);
-        }
-        to {
+          }
+          to {
             transform: rotate(360deg);
+          }
         }
-      }
     }
 
-    img{
-      position: absolute;
-      bottom: 0;
+    .circle-img {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      overflow: hidden;
+
+        img {
+          position: absolute;
+          bottom: 0;
+        }
     }
 
     &::after {
@@ -120,11 +127,11 @@ section{
       height: 100%;
       box-shadow: inset 0 0 20px #000000;
       background: radial-gradient(
-      circle, 
-      #081b2963 20%,
-      #081b29ad 40%,
-      #081b29 100% 
-        );
+          circle, 
+          #081b2963 20%,
+          #081b29ad 40%,
+          #081b29 100% 
+      );
       border-radius: 50%;
       z-index: 2;
     }
@@ -132,13 +139,14 @@ section{
     &:hover::after {
       content: '';
       background: radial-gradient(
-      circle, 
-      #081b2931 20%,
-      #081b2952 40%,
-      #081b2927 100%
-        );
+        circle, 
+        #081b2931 20%,
+        #081b2952 40%,
+        #081b2927 100%
+      );
     }
   }
+
 
   .home-content{
     max-width: 60rem;

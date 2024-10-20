@@ -60,7 +60,6 @@ section {
 }
 
 .home {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,20 +68,21 @@ section {
 }
 .home .image-container {
   position: relative;
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
-  overflow: hidden;
 }
 .home .image-container .circle {
   position: absolute;
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  z-index: 100;
-  animation: rotate 25s linear infinite;
-  transition: 0.5s;
+  width: 530px;
+  height: 530px;
+  top: -15px;
+  left: -16px;
+  z-index: 10;
   cursor: pointer;
+  stroke: transparent;
+  transition: stroke 0.5s ease-out;
+  animation: rotate 45s linear infinite;
 }
 .home .image-container .circle:hover {
   stroke: var(--main-color);
@@ -96,7 +96,14 @@ section {
     transform: rotate(360deg);
   }
 }
-.home .image-container img {
+.home .image-container .circle-img {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.home .image-container .circle-img img {
   position: absolute;
   bottom: 0;
 }

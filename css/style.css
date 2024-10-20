@@ -1,5 +1,5 @@
-@import url("/css/reset.css");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import 'reset.css';
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap';
 :root {
   --bg-color: #081b29;
   --second-bg-color: #112e42;

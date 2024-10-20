@@ -60,9 +60,61 @@ section {
 }
 
 .home {
+  position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 10%;
+  width: 100%;
+}
+.home .image-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.home .image-container .circle {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  z-index: 100;
+  animation: rotate 25s linear infinite;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.home .image-container .circle:hover {
+  stroke: var(--main-color);
+  animation: rotate 45s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.home .image-container img {
+  position: absolute;
+  bottom: 0;
+}
+.home .image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 20px #000000;
+  background: radial-gradient(circle, rgba(8, 27, 41, 0.3882352941) 20%, rgba(8, 27, 41, 0.6784313725) 40%, #081b29 100%);
+  border-radius: 50%;
+  z-index: 2;
+}
+.home .image-container:hover::after {
+  content: "";
+  background: radial-gradient(circle, rgba(8, 27, 41, 0.1921568627) 20%, rgba(8, 27, 41, 0.3215686275) 40%, rgba(8, 27, 41, 0.1529411765) 100%);
 }
 .home .home-content {
   max-width: 60rem;

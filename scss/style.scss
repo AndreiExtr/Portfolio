@@ -277,7 +277,7 @@ section{
   padding: 0 10%;
   width: 100%;
   gap: 2rem;
-  padding-top: 6rem;
+  padding-top: 8rem;
   background-color: var(--second-bg-color);
 
   .about-img{
@@ -294,6 +294,20 @@ section{
       border-radius: 50%;
       border: .2rem solid var(--main-color);
     }
+
+    .circle-spin{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(0);
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border-top: .2rem solid var(--second-bg-color);
+      border-bottom: .2rem solid var(--second-bg-color);
+      border-left: .2rem solid var(--main-color);
+      border-right: .2rem solid var(--main-color);
+    }
   }
 
   .heading{
@@ -301,10 +315,19 @@ section{
     font-weight: 700;
     line-height: 1.3;
     margin-bottom: 3rem;
+
+    span{
+      color: var(--main-color);
+    }
   }
 
   .about-content{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 
     h3{
       font-size: 3rem;
@@ -314,14 +337,16 @@ section{
 
     p{
       font-size: 1.6rem;
-      margin: 2rem 0 4rem;
+      margin: 2rem 0 3rem;
       line-height: 1.5;
+      width: 100rem;
     }
 
     .btn-box {
       display: flex;
       flex-direction: row;
       gap: 24px;
+      justify-content: center;
 
       .btn{
         position: relative;
@@ -352,7 +377,7 @@ section{
           left: 0;
           width: 0;
           height: 100%;
-          background-color: var(--bg-color);
+          background-color: var(--second-bg-color);
           border-radius: .8rem;
           z-index: -1;
           transition: .5s;

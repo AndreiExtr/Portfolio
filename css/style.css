@@ -237,7 +237,7 @@ section {
   padding: 0 10%;
   width: 100%;
   gap: 2rem;
-  padding-top: 6rem;
+  padding-top: 8rem;
   background-color: var(--second-bg-color);
 }
 .about .about-img {
@@ -254,14 +254,35 @@ section {
   border-radius: 50%;
   border: 0.2rem solid var(--main-color);
 }
+.about .about-img .circle-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top: 0.2rem solid var(--second-bg-color);
+  border-bottom: 0.2rem solid var(--second-bg-color);
+  border-left: 0.2rem solid var(--main-color);
+  border-right: 0.2rem solid var(--main-color);
+}
 .about .heading {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 3rem;
 }
+.about .heading span {
+  color: var(--main-color);
+}
 .about .about-content {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 .about .about-content h3 {
   font-size: 3rem;
@@ -270,13 +291,15 @@ section {
 }
 .about .about-content p {
   font-size: 1.6rem;
-  margin: 2rem 0 4rem;
+  margin: 2rem 0 3rem;
   line-height: 1.5;
+  width: 100rem;
 }
 .about .about-content .btn-box {
   display: flex;
   flex-direction: row;
   gap: 24px;
+  justify-content: center;
 }
 .about .about-content .btn-box .btn {
   position: relative;
@@ -306,7 +329,7 @@ section {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: var(--bg-color);
+  background-color: var(--second-bg-color);
   border-radius: 0.8rem;
   z-index: -1;
   transition: 0.5s;

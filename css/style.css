@@ -23,7 +23,9 @@ body {
   left: 0;
   width: 100%;
   padding: 2rem 10%;
-  background-color: var(--bg-color);
+  background-color: rgba(8, 27, 41, 0.26);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;

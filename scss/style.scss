@@ -433,12 +433,60 @@ section{
           position: relative;
           padding-left: 2rem;
 
+          &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -1.1rem;
+            width: 2rem;
+            height: 2rem;
+            background-color: var(--main-color);
+            border-radius: 50%;
+          }
+
           .content{
             position: relative;
             padding: 1.5rem;
             border: .2rem solid var(--main-color);
             border-radius: .6rem;
             margin-bottom: 2rem;
+            overflow: hidden;
+
+            &::before{
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 0;
+              height: 100%;
+              background-color: var(--second-bg-color);
+              z-index: -1;
+              transition: .5s;
+            }
+
+            &:hover::before{
+              width: 100%;
+            }
+
+
+            .year{
+              font-size: 1.5rem;
+              color: var(--main-color);
+              padding-bottom: .5rem;
+              
+              i{
+                padding-right: .5rem;
+              }
+            }
+
+            h3{
+              font-size: 2rem;
+              padding-bottom: .3rem;
+            }
+
+            p{
+              font-size: 1.5rem;
+            }
           }
         }
       }

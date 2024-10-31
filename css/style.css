@@ -377,10 +377,50 @@ section {
   position: relative;
   padding-left: 2rem;
 }
+.education .education-row .education-column .education-box .education-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1.1rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--main-color);
+  border-radius: 50%;
+}
 .education .education-row .education-column .education-box .education-content .content {
   position: relative;
   padding: 1.5rem;
   border: 0.2rem solid var(--main-color);
   border-radius: 0.6rem;
   margin-bottom: 2rem;
+  overflow: hidden;
+}
+.education .education-row .education-column .education-box .education-content .content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--second-bg-color);
+  z-index: -1;
+  transition: 0.5s;
+}
+.education .education-row .education-column .education-box .education-content .content:hover::before {
+  width: 100%;
+}
+.education .education-row .education-column .education-box .education-content .content .year {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  padding-bottom: 0.5rem;
+}
+.education .education-row .education-column .education-box .education-content .content .year i {
+  padding-right: 0.5rem;
+}
+.education .education-row .education-column .education-box .education-content .content h3 {
+  font-size: 2rem;
+  padding-bottom: 0.3rem;
+}
+.education .education-row .education-column .education-box .education-content .content p {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

@@ -275,11 +275,10 @@ section{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 0 10%;
   width: 100%;
   gap: 2rem;
-  padding-top: 8rem;
   background-color: var(--second-bg-color);
 
   .about-img{
@@ -341,7 +340,7 @@ section{
       font-size: 1.6rem;
       margin: 2rem 0 3rem;
       line-height: 1.5;
-      width: 100rem;
+      width: 80rem;
     }
 
     .btn-box {

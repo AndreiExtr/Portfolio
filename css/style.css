@@ -369,4 +369,18 @@ section {
 .education .education-row .education-column .title {
   font-size: 2.5rem;
   margin: 0 0 1.5rem 2rem;
+}
+.education .education-row .education-column .education-box {
+  border-left: 0.2rem solid var(--main-color);
+}
+.education .education-row .education-column .education-box .education-content {
+  position: relative;
+  padding-left: 2rem;
+}
+.education .education-row .education-column .education-box .education-content .content {
+  position: relative;
+  padding: 1.5rem;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 0.6rem;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=style.css.map */

@@ -425,6 +425,23 @@ section{
         font-size: 2.5rem;
         margin: 0 0 1.5rem 2rem;
       }
+
+      .education-box{
+        border-left: .2rem solid var(--main-color);
+
+        .education-content{
+          position: relative;
+          padding-left: 2rem;
+
+          .content{
+            position: relative;
+            padding: 1.5rem;
+            border: .2rem solid var(--main-color);
+            border-radius: .6rem;
+            margin-bottom: 2rem;
+          }
+        }
+      }
     }
   }
 }

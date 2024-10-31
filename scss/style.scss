@@ -392,3 +392,39 @@ section{
     }
   }
 }
+
+.education{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10%;
+  width: 100%;
+  gap: 2rem;
+
+  .heading{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+
+    span{
+      color: var(--main-color);
+    }
+  }
+
+  .education-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+
+    .education-column{
+      flex: 1 1 40rem;
+
+      .title{
+        font-size: 2.5rem;
+        margin: 0 0 1.5rem 2rem;
+      }
+    }
+  }
+}

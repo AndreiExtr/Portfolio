@@ -447,6 +447,7 @@ section {
 .skills .skills-row {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   gap: 5rem;
 }
 .skills .skills-row .skills-column {
@@ -454,5 +455,25 @@ section {
 }
 .skills .skills-row .skills-column .title {
   font-size: 2.5rem;
-  margin: 0 0 1.5rem 2rem;
+  margin: 0 0 1.5rem;
+}
+.skills .skills-row .skills-column .skills-box {
+  border: 0.2rem solid var(--main-color);
+  border-radius: 0.6rem;
+  padding: 2rem;
+}
+.skills .skills-row .skills-column .skills-box .skills-content {
+  position: relative;
+}
+.skills .skills-row .skills-column .skills-box .skills-content .progress {
+  padding: 1rem 0;
+}
+.skills .skills-row .skills-column .skills-box .skills-content .progress h3 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+.skills .skills-row .skills-column .skills-box .skills-content .progress h3 span {
+  color: var(--main-color);
 }/*# sourceMappingURL=style.css.map */

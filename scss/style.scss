@@ -518,6 +518,7 @@ section{
   .skills-row{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     gap: 5rem;
 
     .skills-column{
@@ -525,7 +526,33 @@ section{
 
       .title{
         font-size: 2.5rem;
-        margin: 0 0 1.5rem 2rem;
+        margin: 0 0 1.5rem;
+      }
+
+      .skills-box{
+        border: .2rem solid var(--main-color);
+        border-radius: .6rem;
+        padding: 2rem;
+
+        .skills-content{
+          position: relative;
+
+          .progress{
+            padding: 1rem 0;
+
+            h3{
+              font-size: 1.7rem;
+              font-weight: 400;
+              display: flex;
+              justify-content: space-between;
+
+              span{
+                color: var(--main-color);
+              }
+            }
+          }
+          
+        }
       }
     }
   }

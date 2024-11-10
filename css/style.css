@@ -569,4 +569,48 @@ section {
   background-color: transparent;
   border-radius: 0.6rem;
   border: 0.2rem solid var(--main-color);
+}
+.contacts form .btn-box {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
+}
+.contacts form .btn-box .btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 2rem;
+  width: 15rem;
+  height: 5rem;
+  background-color: var(--main-color);
+  border-radius: 0.8rem;
+  border: 1px solid var(--main-color);
+  font-size: 1.8rem;
+  font-family: 600;
+  letter-spacing: 0.1rem;
+  color: var(--bg-color);
+  z-index: 1;
+  overflow: hidden;
+}
+.contacts form .btn-box .btn:hover {
+  color: var(--main-color);
+}
+.contacts form .btn-box .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--bg-color);
+  border-radius: 0.8rem;
+  z-index: -1;
+  transition: 0.5s;
+  border: 1px solid var(--main-color);
+}
+.contacts form .btn-box .btn:hover::before {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

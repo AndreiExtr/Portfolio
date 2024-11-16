@@ -165,9 +165,7 @@ section{
       width: 70ch;
       height: 6rem;
       overflow: hidden;
-      
-      /* Анимация для текста */
-      animation: typing 4s steps(20) infinite alternate-reverse;
+      animation: typing 4s steps(18) infinite alternate-reverse;
     
       span {
         position: absolute;
@@ -199,7 +197,7 @@ section{
         bottom: 0;
         width: 2px;
         background-color: var(--main-color);
-        animation: cursor 4s steps(20) infinite alternate-reverse; /* Двигается вместе с текстом */
+        animation: cursor 4s steps(18) infinite alternate-reverse;
       }
     
       /* Анимация для текста */
@@ -220,17 +218,30 @@ section{
     
       /* Анимация для смены текста */
       @keyframes switchText {
-        0%, 48% {
+        0%, 49% {
           opacity: 1;
         }
         50%, 100% {
           opacity: 0;
         }
       }
-  
+
+      /* Анимация для вертикальной линии (курсор) */
+      @keyframes cursor {
+        0% {
+          left: 0; /* Начало на левом краю */
+        }
+        40% {
+          left: 100%; /* Стоит на правом краю */
+        }
+        60% {
+          left: 100%; /* Стоит на правом краю */
+        }
+        100% {
+          left: 0; /* Возвращается на начало */
+        }
+      }
     }
-    
-    
     
     p{
       font-size: 1.6rem;

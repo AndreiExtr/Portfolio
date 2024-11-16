@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import 'reset.css';
 @import 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap';
 :root {
@@ -135,13 +136,65 @@ section {
 }
 .home .home-content .text-animate {
   position: relative;
-  width: 32.8rem;
+  white-space: nowrap;
+  width: 70ch;
+  height: 6rem;
+  overflow: hidden;
+  /* Анимация для текста */
+  animation: typing 4s steps(20) infinite alternate-reverse;
+  /* Линия-курсор */
+  /* Анимация для текста */
+  /* Анимация для смены текста */
 }
-.home .home-content .text-animate h3 {
-  font-size: 3.2rem;
+.home .home-content .text-animate span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 4.2rem;
   font-weight: 700;
   color: transparent;
   -webkit-text-stroke: 0.7px var(--main-color);
+  margin: 0;
+  opacity: 0;
+  animation: switchText 8s linear infinite;
+}
+.home .home-content .text-animate span:first-child {
+  animation-delay: 0s; /* "Frontend Developer" отображается первым */
+}
+.home .home-content .text-animate span:last-child {
+  animation-delay: 4s; /* "Product Designer" отображается вторым */
+}
+.home .home-content .text-animate ::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--main-color);
+  animation: cursor 4s steps(20) infinite alternate-reverse; /* Двигается вместе с текстом */
+}
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  40% {
+    width: 70ch;
+  }
+  60% {
+    width: 70ch;
+  }
+  100% {
+    width: 0ch;
+  }
+}
+@keyframes switchText {
+  0%, 48% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
 }
 .home .home-content p {
   font-size: 1.6rem;

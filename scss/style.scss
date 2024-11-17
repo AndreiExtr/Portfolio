@@ -168,15 +168,15 @@ section{
       border-right: 2px solid var(--main-color);
 
       .gradient-designer{
-        background: linear-gradient(90deg, #00abf0, #00fd4c); /* Градиент */
-        background-clip: text; /* Обрезает фон текстом */
-        -webkit-text-fill-color: transparent; /* Прозрачный цвет текста */
+        background: linear-gradient(90deg, #00abf0, #00fd4c);
+        background-clip: text;
+        color: transparent;
       }
 
       .gradient-develop{
-        background: linear-gradient(90deg, #00abf0, #ffffff); /* Градиент */
-        background-clip: text; /* Обрезает фон текстом */
-        -webkit-text-fill-color: transparent; /* Прозрачный цвет текста */
+        background: linear-gradient(90deg, #00abf0, #ffffff);
+        background-clip: text;
+        color: transparent;
       }
     
       span {

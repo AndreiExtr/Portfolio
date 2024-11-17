@@ -169,13 +169,13 @@ section{
 
       .gradient-designer{
         background: linear-gradient(90deg, #00abf0, #00fd4c); /* Градиент */
-        -webkit-background-clip: text; /* Обрезает фон текстом */
+        background-clip: text; /* Обрезает фон текстом */
         -webkit-text-fill-color: transparent; /* Прозрачный цвет текста */
       }
 
       .gradient-develop{
         background: linear-gradient(90deg, #00abf0, #ffffff); /* Градиент */
-        -webkit-background-clip: text; /* Обрезает фон текстом */
+        background-clip: text; /* Обрезает фон текстом */
         -webkit-text-fill-color: transparent; /* Прозрачный цвет текста */
       }
     

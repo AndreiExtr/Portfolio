@@ -146,12 +146,14 @@ section {
 }
 .home .home-content .text-animate .gradient-designer {
   background: linear-gradient(90deg, #00abf0, #00fd4c); /* Градиент */
-  -webkit-background-clip: text; /* Обрезает фон текстом */
+  -webkit-background-clip: text;
+          background-clip: text; /* Обрезает фон текстом */
   -webkit-text-fill-color: transparent; /* Прозрачный цвет текста */
 }
 .home .home-content .text-animate .gradient-develop {
   background: linear-gradient(90deg, #00abf0, #ffffff); /* Градиент */
-  -webkit-background-clip: text; /* Обрезает фон текстом */
+  -webkit-background-clip: text;
+          background-clip: text; /* Обрезает фон текстом */
   -webkit-text-fill-color: transparent; /* Прозрачный цвет текста */
 }
 .home .home-content .text-animate span {

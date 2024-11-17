@@ -137,13 +137,22 @@ section {
 .home .home-content .text-animate {
   position: relative;
   white-space: nowrap;
-  width: 70ch;
   height: 6rem;
   overflow: hidden;
-  animation: typing 6s steps(40) infinite alternate-reverse;
+  animation: typing 6s steps(45) infinite alternate-reverse;
   border-right: 2px solid var(--main-color);
   /* Анимация для текста */
   /* Анимация для смены текста */
+}
+.home .home-content .text-animate .gradient-designer {
+  background: linear-gradient(90deg, #00abf0, #00fd4c); /* Градиент */
+  -webkit-background-clip: text; /* Обрезает фон текстом */
+  -webkit-text-fill-color: transparent; /* Прозрачный цвет текста */
+}
+.home .home-content .text-animate .gradient-develop {
+  background: linear-gradient(90deg, #00abf0, #ffffff); /* Градиент */
+  -webkit-background-clip: text; /* Обрезает фон текстом */
+  -webkit-text-fill-color: transparent; /* Прозрачный цвет текста */
 }
 .home .home-content .text-animate span {
   position: absolute;
@@ -152,7 +161,6 @@ section {
   font-size: 4.2rem;
   font-weight: 700;
   color: transparent;
-  -webkit-text-stroke: 0.7px var(--main-color);
   margin: 0;
   opacity: 0;
   animation: switchText 12s linear infinite;
@@ -168,10 +176,10 @@ section {
     width: 0ch;
   }
   40% {
-    width: 70ch;
+    width: 75ch;
   }
   60% {
-    width: 70ch;
+    width: 75ch;
   }
   100% {
     width: 0ch;

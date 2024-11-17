@@ -140,11 +140,10 @@ section {
   width: 70ch;
   height: 6rem;
   overflow: hidden;
-  animation: typing 4s steps(18) infinite alternate-reverse;
-  /* Линия-курсор */
+  animation: typing 6s steps(40) infinite alternate-reverse;
+  border-right: 2px solid var(--main-color);
   /* Анимация для текста */
   /* Анимация для смены текста */
-  /* Анимация для вертикальной линии (курсор) */
 }
 .home .home-content .text-animate span {
   position: absolute;
@@ -156,23 +155,13 @@ section {
   -webkit-text-stroke: 0.7px var(--main-color);
   margin: 0;
   opacity: 0;
-  animation: switchText 8s linear infinite;
+  animation: switchText 12s linear infinite;
 }
 .home .home-content .text-animate span:first-child {
   animation-delay: 0s; /* "Frontend Developer" отображается первым */
 }
 .home .home-content .text-animate span:last-child {
-  animation-delay: 4s; /* "Product Designer" отображается вторым */
-}
-.home .home-content .text-animate ::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 2px;
-  background-color: var(--main-color);
-  animation: cursor 4s steps(18) infinite alternate-reverse;
+  animation-delay: 6s; /* "Product Designer" отображается вторым */
 }
 @keyframes typing {
   0% {
@@ -194,20 +183,6 @@ section {
   }
   50%, 100% {
     opacity: 0;
-  }
-}
-@keyframes cursor {
-  0% {
-    left: 0; /* Начало на левом краю */
-  }
-  40% {
-    left: 100%; /* Стоит на правом краю */
-  }
-  60% {
-    left: 100%; /* Стоит на правом краю */
-  }
-  100% {
-    left: 0; /* Возвращается на начало */
   }
 }
 .home .home-content p {

@@ -612,7 +612,28 @@ section {
   border-radius: 0.6rem;
   border: 0.2rem solid var(--main-color);
 }
+.contacts form .input-box .input-field input:focus ~ .focus, .contacts form .input-box .input-field input:valid ~ .focus {
+  width: 100%;
+}
+.contacts form .input-box .input-field .focus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: red;
+  border-radius: 0.6rem;
+  z-index: -1;
+  transition: 0.5s;
+}
+.contacts form .textarea-field {
+  position: relative;
+  height: 20rem;
+}
 .contacts form .textarea-field textarea {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   padding: 1.5rem;
@@ -621,6 +642,22 @@ section {
   background-color: transparent;
   border-radius: 0.6rem;
   border: 0.2rem solid var(--main-color);
+  resize: none;
+}
+.contacts form .textarea-field textarea:focus ~ .focus, .contacts form .textarea-field textarea:valid ~ .focus {
+  width: 100%;
+  height: 100%;
+}
+.contacts form .textarea-field .focus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: red;
+  border-radius: 0.6rem;
+  z-index: -1;
+  transition: 0.5s;
 }
 .contacts form .btn-box {
   display: flex;

@@ -760,7 +760,7 @@ section{
           left: 0;
           width: 0;
           height: 100%;
-          background-color: red;
+          background-color: var(--second-bg-color);
           border-radius: .6rem;
           z-index: -1;
           transition: .5s;
@@ -799,7 +799,7 @@ section{
         left: 0;
         width: 0;
         height: 100%;
-        background-color: red;
+        background-color: var(--second-bg-color);
         border-radius: .6rem;
         z-index: -1;
         transition: .5s;
@@ -854,5 +854,19 @@ section{
         }
       }
     }
+  }
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background-color: var(--second-bg-color);
+
+  p{
+    font-size: 1.6rem;
   }
 }

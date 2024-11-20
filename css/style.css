@@ -588,6 +588,7 @@ section {
 }
 .contacts form {
   max-width: 70rem;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
 }
@@ -596,12 +597,18 @@ section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 70rem;
+  max-width: 80rem;
+  width: 100%;
 }
 .contacts form .input-box .input-field {
   position: relative;
   width: 49%;
   margin: 0.8rem 0;
+}
+@media (max-width: 768px) {
+  .contacts form .input-box .input-field {
+    width: 100%;
+  }
 }
 .contacts form .input-box .input-field input {
   width: 100%;

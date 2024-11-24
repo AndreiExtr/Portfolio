@@ -6,6 +6,7 @@
   --second-bg-color: #112e42;
   --text-color: #ededed;
   --main-color: #00abf0;
+  --error-color: #f06000;
 }
 
 html{
@@ -747,7 +748,7 @@ section{
       .input-field{
         position: relative;
         width: 49%;
-        margin: 0 0 .9rem 0;
+        margin: 0 0 2rem 0;
 
         @media (max-width: 768px) {
             width: 100%;
@@ -787,7 +788,7 @@ section{
       display: flex;
       flex-direction: column;
       height: 20rem;
-      margin: 0 0 .9rem 0;
+      margin: 0 0 1rem 0;
 
       textarea{
         width: 100%;
@@ -818,6 +819,14 @@ section{
         z-index: -1;
         transition: .5s;
       }
+    }
+
+    .error-txt{
+      font-size: 1.2rem;
+      text-align: left;
+      margin-top: .5rem;
+      color: var(--error-color);
+      display: none;
     }
 
     .btn-box {

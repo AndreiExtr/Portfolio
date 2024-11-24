@@ -211,36 +211,26 @@
         <form action="#">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input name="name" type="text" placeholder="Full Name" required >
                     <div class="error-txt">Full Name can't be blank</div>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
-                    <div class="error-txt">Email Address can't be blank</div>
                     <span class="focus"></span>
                 </div>
             </div>
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
-                    <div class="error-txt">Mobile Number can't be blank</div>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
-                    <div class="error-txt">Email Subject can't be blank</div>
+                    <input name="email" type="text" placeholder="Email Address" required >
+                    <div class="error-txt">Email Address can't be blank</div>
                     <span class="focus"></span>
                 </div>
             </div>
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required ></textarea>
                 <div class="error-txt">Message can't be blank</div>
                 <span class="focus"></span>
             </div>
             
             <div class="btn-box btns">
-                <button type="submit" class="btn">Submit</button>
+                <button type="submit" class="btn" id="submit">Submit</button>
             </div>
         </form>
     </section>
@@ -252,6 +242,8 @@
         </div>
     </footer>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/script.js"></script>
+    <!-- <script src="server.js"></script> -->
 </body>
 </html>

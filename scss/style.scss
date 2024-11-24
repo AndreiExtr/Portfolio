@@ -741,13 +741,12 @@ section{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
       max-width: 80rem;
       width: 100%;
 
       .input-field{
         position: relative;
-        width: 49%;
+        width: 100%;
         margin: 0 0 2rem 0;
 
         @media (max-width: 768px) {
@@ -853,6 +852,7 @@ section{
         color: var(--bg-color);
         z-index: 1;
         overflow: hidden;
+        cursor: pointer;
 
         &:hover{
           color: var(--main-color);
